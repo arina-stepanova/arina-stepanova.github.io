@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf) format("truetype"); 
+    }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/back-clouds-pink.jpeg);
+    font-family: 'Comfortaa';
+}
+
+nav {
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(226, 66, 146);
+    text-decoration: none;
+}
+
+a:hover {
+    /* font-size: 19px; */
+    transition-duration: 0.2s;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 9px rgb(255, 0, 157);
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+#barbieLogo{
+    height: 80px;
+    /* margin-right: 20px; */
+}
+
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+    cursor: pointer;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+}
+
+.bars::before, .bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: absolute;
+}
+
+.bars::before {
+    top: 5px;
+}
+.bars::after {
+    top: -5px;
+}
+
+/* Tablet Menu */
+
+@media all and (min-width:468px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button a {
+        padding: 7px 15px;
+        background-color: rgba(255, 159, 234, 0.466);
+        border: none;
+        border-radius: 50em;
+    }
+
+    .button a:hover {
+        background-color: rgb(224, 100, 162);
+        color: rgb(250, 221, 250);
+    }
+
+    .button:not(.secondary) a:hover {
+        box-shadow: 0 0 13px rgba(255, 0, 212, 0.747);
+    }
+
+    .button.secondary a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+@media all and (min-width:768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 10px 15px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+#discountBlock {
+    width: 100%;
+    padding: 20px;
+}
+
+.discountBlocks {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.discountBlocks img {
+    width: 160px;
+
+}
+
+
+
+
+/* .button, .secondary {
+    border-bottom: 1px #444 solid; 
+}*/
+ 
+/*header {
+     background-color: rgb(255, 255, 255);
+    font-family: 'Comfortaa';
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px; 
+}*/
+
+/* 
+.headerSection {
+    display: flex;
+    align-items: center;
+}
+
+.headerItem {
+    padding: 10px 15px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.headerItem:hover {
+    background-color: rgb(209, 88, 139);
+}
+
+.headerButton {
+    cursor: pointer;
+}
+
+ .header h1 {
+    color: rgb(219, 58, 133);
+    font-size: 18px;
+}
+
+.nav-menu {
+    margin: 0;
+    list-style-type: disc;
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Comfortaa';
+}
+
+.nav-menu li {
+	display: inline; 
+    background-color: rgb(219, 58, 133);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.nav-menu ul {
+	padding: 0;
+	display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu a {
+    color: rgb(255, 246, 252);
+    font-weight: bold;
+    text-decoration: none;	
+} */
