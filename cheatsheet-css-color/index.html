@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+        <title>CSS Cheat Sheet</title>
+        <link href="./index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>cheat sheet</h2>
+            <h1>CSS COLOR</h1>
+            <p>Briefly: The color property sets the color of the text.</p>
+        </header>
+        <main>
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr class='tableHeadLinkTopic' >
+                        <th><a href="#topickeywordValue">KEYWORD VALUE</a></th>
+                        <th><a href="#topicNameColor">NAME COLOR</a></th>
+                        <th><a href="#topicHEX">HEX</a></th>
+                        <!-- <th><a href="#topicRGB">RGB</a></th>
+                        <th><a href="#topicHSl">HSL</a></th>
+                        <th><a href="#topicHWB">HWB</a></th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>
+                                color: currentcolor;<br>
+                                color: transparent;
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                color: <span class="cursorP" id="redColor">red</span>;<br>
+                                color: <span class="cursorP" id="orangeColor">orange</span>;<br>
+                                color: <span class="cursorP" id="tanColor">tan</span>;<br>
+                                color: <span class="cursorP" id="rebeccapurpleColor">rebeccapurple</span>;<br>
+                                color: <span class="cursorP" id="tealColor">teal</span>;
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                color: <span class="cursorP" id="color-1">#1BE0C4</span>;<br>
+                                color: <span class="cursorP" id="color-2">#71BDE2</span>;<br>
+                                color: <span class="cursorP" id="color-3">#F26233</span>;<br>
+                                color: <span class="cursorP" id="color-4">#09a</span>;
+                            </code>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <th><a href="#topicRGB">RGB</a></th>
+                    <th><a href="#topicHSl">HSL</a></th>
+                    <th><a href="#topicHWB">HWB</a></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>
+                                color: rgb(34, 12, 64, 0.6);<br>
+                                color: rgba(34, 12, 64, 0.6);<br>
+                                color: rgb(34 12 64 / 0.6);<br>
+                                color: rgba(34 12 64 / 0.3);<br>
+                                color: rgb(34 12 64 / 60%);<br>
+                                color: rgba(34.6 12 64 / 30%);
+                            </code>    
+                        </td>
+                        <td>
+                            <code>
+                                color: hsl(30, 100%, 50%, 0.6);<br>
+                                color: hsla(30, 100%, 50%, 0.6);<br>
+                                color: hsl(30 100% 50% / 0.6);<br>
+                                color: hsla(30 100% 50% / 0.6);<br>
+                                color: hsl(30 100% 50% / 60%);<br>
+                                color: hsla(30.2 100% 50% / 60%);<br>
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                color: hwb(45 45% 20% / 0.6);<br>
+                                color: hwb(215 31% 21%);<br>
+                                color: hwb(92 42% 17%);<br>
+                                color: hwb(0 31% 7%);<br>
+                                color: hwb(171 38% 15%);
+                            </code>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="blockHowToUnderstand">
+                <span id="howToUnderstand">How to understand:</span>
+                You can set your own text color for any element of a web page. The <span class="highlight">color</span> property sets it for text, as well as for its design elements, such as underlining, lines above text, strikethroughs, and others.
+                
+                To set the background of text, use the <span class="highlight">background-color</span>  property, and the borders of an element can be colored with <span class="highlight">border-color</span>.
+            </p>
+            
+            <!-- подробнее о каждом преставлении цвета -->
+
+            <article>
+                <section>
+                    <h2 id="keywordValue">KEYWORD VALUE</h2>
+                    <h3 class="subtitle"> transparent </h3>
+                    <p>The transparent keyword specifies a transparent text color. This is technically equivalent to writing any color with zero transparency <code>rgb(0 0 0 / 0)</code>, but there are times when just transparency and color transparency can work differently, for example in gradients.</p>
+                    <h3 class="subtitle">currentColor</h3>
+                    <p>The <a href="https://doka.guide/css/currentcolor/">currentColor</a> keyword hides the color specified in the element's color property. It is very convenient to specify this word as the value of other properties in order not to repeatedly specify the same color.</p>
+                </section>
+
+                <section>
+                    <h2 id="topicNameColor">NAME COLOR</h2>
+                    <p>
+                        The easiest way to specify color on the web is with keywords. English color names are used. Most popular base colors:
+                        <ul>
+                            <li>black</li>
+                            <li>white</li>
+                            <li>red</li>
+                            <li>green</li>
+                            <li>blue</li>
+                        </ul>
+                        In fact, there are a lot of keywords for colors. It doesn't make much sense to memorize them all. You can always look at the color chart.
+                        <!-- тут с помощью javascript я хочу сделать кнопку с выпадающей таблицей с цветами -->
+                        <table id="colorPalette">
+                            <tbody>
+                                <tr> 
+                                    <td style="background: indianred">IndianRed</td> 
+                                    <td style="background: lightcoral">LightCoral</td> 
+                                    <td style="background: salmon">Salmon</td> 
+                                    <td style="background: darksalmon">DarkSalmon</td> 
+                                    <td style="background: lightsalmon">LightSalmon</td> 
+                                    <td style="background: crimson" class="light-text">Crimson</td> 
+                                    <td style="background: red">Red</td> 
+                                    <td style="background: firebrick" class="light-text">FireBrick</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: darkred" class="light-text">DarkRed</td> 
+                                    <td style="background: pink">Pink</td> 
+                                    <td style="background: lightpink">LightPink</td> 
+                                    <td style="background: hotpink">HotPink</td> 
+                                    <td style="background: deeppink">DeepPink</td> 
+                                    <td style="background: mediumvioletred" class="light-text">MediumVioletRed</td> 
+                                    <td style="background: palevioletred">PaleVioletRed</td> 
+                                    <td style="background: coral">Coral</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: tomato">Tomato</td> 
+                                    <td style="background: orangered">OrangeRed</td> 
+                                    <td style="background: darkorange">DarkOrange</td> 
+                                    <td style="background: orange">Orange</td> 
+                                    <td style="background: lightgoldenrodyellow">LightGoldenrodYellow</td> 
+                                    <td style="background: papayawhip">PapayaWhip</td> 
+                                    <td style="background: moccasin">Moccasin</td> 
+                                    <td style="background: peachpuff">PeachPuff</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: gold">Gold</td> 
+                                    <td style="background: yellow">Yellow</td> 
+                                    <td style="background: lightyellow">LightYellow</td> 
+                                    <td style="background: lemonchiffon">LemonChiffon</td>
+                                    <td style="background: palegoldenrod">PaleGoldenrod</td> 
+                                    <td style="background: khaki">Khaki</td> 
+                                    <td style="background: darkkhaki">DarkKhaki</td> 
+                                    <td style="background: lavender">Lavender</td>  
+                                </tr> 
+                                <tr> 
+                                    <td style="background: thistle">Thistle</td> 
+                                    <td style="background: plum">Plum</td> 
+                                    <td style="background: violet">Violet</td> 
+                                    <td style="background: orchid">Orchid</td> 
+                                    <td style="background: fuchsia">Fuchsia</td> 
+                                    <td style="background: magenta">Magenta</td> 
+                                    <td style="background: mediumorchid">MediumOrchid</td> 
+                                    <td style="background: mediumpurple">MediumPurple</td>
+                                </tr> 
+                                
+                                <tr> 
+                                    <td style="background: rebeccapurple" class="light-text">RebeccaPurple</td> 
+                                    <td style="background: blueviolet" class="light-text">BlueViolet</td> <td style="background: darkviolet" class="light-text">DarkViolet</td> <td style="background: darkorchid" class="light-text">DarkOrchid</td> <td style="background: darkslateblue" class="light-text">DarkSlateBlue</td> 
+                                    <td style="background: mediumslateblue">MediumSlateBlue</td> 
+                                    <td style="background: greenyellow">GreenYellow</td> 
+                                    <td style="background: chartreuse">Chartreuse</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: darkmagenta" class="light-text">DarkMagenta</td> 
+                                    <td style="background: purple" class="light-text">Purple</td> 
+                                    <td style="background: indigo" class="light-text">Indigo</td> 
+                                    <td style="background: slateblue" class="light-text">SlateBlue</td> 
+                                    <td style="background: lawngreen">LawnGreen</td> 
+                                    <td style="background: lime">Lime</td> 
+                                    <td style="background: limegreen">LimeGreen</td> 
+                                    <td style="background: palegreen">PaleGreen</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: lightgreen">LightGreen</td> 
+                                    <td style="background: mediumspringgreen">MediumSpringGreen</td> 
+                                    <td style="background: springgreen">SpringGreen</td> 
+                                    <td style="background: mediumseagreen">MediumSeaGreen</td> 
+                                    <td style="background: seagreen">SeaGreen</td> 
+                                    <td style="background: forestgreen">ForestGreen</td> 
+                                    <td style="background: green" class="light-text">Green</td> 
+                                    <td style="background: darkgreen" class="light-text">DarkGreen</td>
+                                </tr>
+                                <tr> 
+                                    <td style="background: yellowgreen">YellowGreen</td> 
+                                    <td style="background: olivedrab">OliveDrab</td> 
+                                    <td style="background: olive">Olive</td> 
+                                    <td style="background: darkolivegreen" class="light-text">DarkOliveGreen</td> <td style="background: mediumaquamarine">MediumAquamarine</td> <td style="background: darkseagreen">DarkSeaGreen</td> <td style="background: lightseagreen">LightSeaGreen</td> <td style="background: darkcyan">DarkCyan</td>
+                                </tr> 
+                                <tr> 
+                                    <td style="background: teal" class="light-text">Teal</td> <td style="background: aqua">Aqua</td> <td style="background: cyan">Cyan</td> <td style="background: lightcyan">LightCyan</td> <td style="background: paleturquoise">PaleTurquoise</td> <td style="background: aquamarine">Aquamarine</td> <td style="background: turquoise">Turquoise</td> <td style="background: mediumturquoise">MediumTurquoise</td>
+                                </tr> 
+                                <tr> 
+                                    <td style="background: darkturquoise">DarkTurquoise</td> <td style="background: cadetblue">CadetBlue</td> <td style="background: steelblue">SteelBlue</td> <td style="background: lightsteelblue">LightSteelBlue</td> 
+                                    <td style="background: powderblue">PowderBlue</td> <td style="background: lightblue">LightBlue</td> <td style="background: skyblue">SkyBlue</td> <td style="background: lightskyblue">LightSkyBlue</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: deepskyblue">DeepSkyBlue</td> 
+                                    <td style="background: dodgerblue">DodgerBlue</td> 
+                                    <td style="background: cornflowerblue">CornflowerBlue</td> 
+                                    <td style="background: mediumslateblue">MediumSlateBlue</td> 
+                                    <td style="background: royalblue" class="light-text">RoyalBlue</td> <td style="background: blue" class="light-text">Blue</td> 
+                                    <td style="background: mediumblue" class="light-text">MediumBlue</td> <td style="background: darkblue" class="light-text">DarkBlue</td> 
+                                </tr> 
+                                <tr>
+                                    <td style="background: navy" class="light-text">Navy</td> 
+                                    <td style="background: midnightblue" class="light-text">MidnightBlue</td> 
+                                    <td style="background: cornsilk">Cornsilk</td> 
+                                    <td style="background: blanchedalmond">BlanchedAlmond</td> 
+                                    <td style="background: darkgoldenrod">DarkGoldenrod</td> 
+                                    <td style="background: peru">Peru</td> 
+                                    <td style="background: chocolate">Chocolate</td> 
+                                    <td style="background: saddlebrown" class="light-text">SaddleBrown</td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="background: bisque">Bisque</td> 
+                                    <td style="background: navajowhite">NavajoWhite</td> 
+                                    <td style="background: wheat">Wheat</td> 
+                                    <td style="background: burlywood">BurlyWood</td> 
+                                    <td style="background: tan">Tan</td> 
+                                    <td style="background: rosybrown">RosyBrown</td> 
+                                    <td style="background: sandybrown">SandyBrown</td> 
+                                    <td style="background: goldenrod">Goldenrod</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>Keywords are case-insensitive - you can write them however you like and the browser will still understand you.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="topicHEX">HEX</h2>
+                    <p>Hexadecimal color code in the RGB color model that starts with <code>#</code>, for example, <code>#ff0000</code>. Solid colors are written in the format <code>#RRGGBB</code> or abbreviated <code>#RGB</code> (if the characters of each group are the same). For example <code>#009900</code> or #090. If transparency needs to be specified, it is added at the end in the <code>#RRGGBBAA</code> or <code>#RGBA</code> HEX format, such as <code>#00990055</code> or <code>#0905</code>.
+                        <br><br>
+                    Previously, it was impossible to set a color in #RGBA notation and you had to use the <code>rgba()</code>  function, but today this method has good cross-browser compatibility. There is only one problem: few people can immediately calculate 50% in hexadecimal format, therefore, to specify the transparency of a color, the <code>rgb()</code>  function is most often used, where transparency can be set in fractions or percentages.</p>
+                    <!-- <img src="hex.png" alt="hex color palette"> -->
+                    <div>
+                        <div class="coloredСircles" id="firstСoloredСircle">
+                            <p>#16E7EC</p>
+                        </div>
+                        <div class="coloredСircles" id="secondСoloredСircle">
+                            <p>#5EACBE</p>
+                        </div>
+                        <div class="coloredСircles" id="thirdСoloredСircle">
+                            <p>#04646C</p>
+                        </div>
+                        <div class="coloredСircles" id="fourthСoloredСircle">
+                            <p>#6C64AC</p>
+                        </div>
+                        <div class="coloredСircles" id="fifthСoloredСircle">
+                            <p>#B090C4</p>
+                        </div>
+                        <div class="coloredСircles" id="sixthСoloredСircle">
+                            <p>#54315C</p>
+                        </div>
+                    </div>
+                        
+                </section>
+
+                <section>
+                    <h2 id="topicRGB">RGB</h2>
+                    <p>The <code>rgb()</code> function is used to set the color, for example <code>rgb(0 63 255)</code> for blue. Each of the three values is responsible for a separate RGB channel and can be written as a number from 0 to 255 or as a percentage. To add transparency, after recording the channels, put a slash and write the desired value from 0 to 1 or as a percentage, for example, <code>rgb(0 63 255 / 0.5)</code> for translucent blue.
+                        <br><br>
+                    Previously, the RGB syntax was different from the modern one, and you can still find it in the code or choose it for better cross-browser compatibility, see Can I use. To separate channels inside the function, it was necessary to use commas <code>rgb(0, 63, 255)</code>, and to add transparency, a special function <code>rgba()</code>, which took the transparency of the color as the last parameter, for example <code>rgba(255, 0, 0, 0.5)</code> .</p>
+                    <img src="images/rgb.png" alt="rgb circle" id="rgb_img">
+                    <!-- <div id="paletteRedGreenBlue">
+                        <div id="redColorInPaletteRGB">
+                            <p>R</p>
+                        </div>
+                        <div id="greenColorInPaletteRGB">
+                            <p>G</p>
+                        </div>
+                        <div id="blueColorInPaletteRGB">
+                            <p>B</p>
+                        </div>
+                    </div> -->
+                </section>
+
+                <section>
+                    <h2 id="topicHSl">HSL</h2>
+                    <p>
+                        The HSL color model describes the same colors as RGB, but differently: 
+                        <ul>
+                            <li>H - Hue</li>
+                            <li>S - Saturation</li>
+                            <li>L - Lightness</li>
+                        </ul> 
+                        For example, <code>hsl(120 100% 50%)</code> for green. The first hue value is given in degrees and can be written simply as 120 (as is most often done) or with rotation units: deg, turn, grad, rad. Values are available from 0 to 360 if you specify rotation in degrees. Negative values are not allowed. The second and third values are given as a percentage. Transparency is added in the same way as in rgb, using a slash with a value like <code>hsl(120 100% 50% / 0.5)</code> translucent green.
+                        <br><br>
+                        The <code>hsl()</code> syntax differed from the modern one in the same way as rgb(): it needed commas and a special hsla() function to set the transparency of the color. Use the old syntax for better compatibility and don't be surprised if you see it in your code.</p>
+                    <img src="images/hsl.png" alt="hsl color" id="hsl_img">
+                </section>
+
+                <section>
+                    <h2 id="topicHWB">HWB</h2>
+                    <p>
+                        <ul>
+                            <li>H - hue</li>
+                            <li>W - whiteness (amount of white)</li>
+                            <li>B - blackness (amount of black)</li>
+                        </ul>
+                        The first hue value is given in degrees and can be written simply as 120 (as is most often done) or with rotation units: <code>deg</code>, <code>turn</code>, <code>grad</code>, <code>rad</code>. Values are available from 0 to 360 if you specify rotation in degrees. The second and third values are given as a percentage. It is permissible to specify color transparency as the fourth parameter through a slash.
+                        <br><br>
+                        If the second and third parameters add up to 100%, then they are normalized to 100% automatically.
+                    </p>
+                    <div>
+                        <div class="coloredSquares" id="firstColoredSquare">
+                            <p>hwb(0 31% 7%)</p>
+                        </div>
+                        <div class="coloredSquares" id="secondColoredSquare">
+                            <p>hwb(24 30% 0%)</p>
+                        </div>
+                        <div class="coloredSquares" id="thirdColoredSquare">
+                            <p>hwb(50 31% 4%)</p>
+                        </div>
+                        <div class="coloredSquares" id="fourthColoredSquare">
+                            <p>hwb(92 42% 17%)</p>
+                        </div>
+                        <div class="coloredSquares" id="fifthColoredSquare">
+                            <p>hwb(171 38% 15%)</p>
+                        </div>
+                        <div class="coloredSquares" id="sixthColoredSquare">
+                            <p>hwb(215 28% 32%)</p>
+                        </div>
+                        <div class="coloredSquares" id="seventhColoredSquare">
+                            <p>hwb(283 32% 29%)</p>
+                        </div>
+                    </div>
+                    <!-- <figure>
+                        <img src="images/hwb.jpeg" alt="hwb palette">
+                        <figcaption>Five colors from HWB values with varying amounts of white/black.</figcaption>
+                    </figure> -->
+            </article>
+        </main>
+
+        <footer>
+            <p>Helpful links:</p>
+            <a href="https://doka.guide/css/color/">doka</a>
+            <a href="http://colormind.io/">colormind</a>
+            <a href="https://147colors.com/">147colors</a>
+        </footer>
+
+        <p id="topOfPage"> <a href="#top">Top of<br>page</a> </p>
+    </body>
+</html>

@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Share Tech Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sharetechmono/v15/J7aHnp1uDWRBEqV98dVQztYldFcLowEFA87Heg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: #48494A;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2 {
+    color: #F1D379;
+}
+
+table {
+    /* width: 1000px; Ширина таблицы */
+    margin: 50px auto; /* Выравниваем таблицу по центру */
+    text-align: start;
+    font-size: 16px;
+}
+
+thead {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+    font-size: 18px;
+    background-color: #68C0BD;
+    height: 50px;
+    color: #48494A;
+}
+/* 
+thead th {
+    
+} */
+
+thead th:hover {
+    background-color: #48494A;
+    color: #68C0BD;
+    border: 1px solid #68C0BD ;
+    cursor: pointer;
+    font-size: 19.5px;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+footer {
+    background-color: #F1D379;
+    padding: 30px 0;
+    color: #48494A;
+    /* position: sticky; */
+    /* bottom: 0; */
+    width: 100%;
+    text-align: center;
+}
+
+#blockHowToUnderstand {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+#howToUnderstand {
+    color: #F1D379;
+    font-size: 23px;
+}
+
+footer p,
+footer a {
+    color: #292929;
+}
+
+.cursorP {
+    cursor: pointer;
+}
+
+#redColor:hover {
+    background-color: red;
+}
+
+#orangeColor:hover  {
+    background-color: orange;
+}
+
+#tanColor:hover  {
+    background-color: tan;
+}
+
+#rebeccapurpleColor:hover  {
+    background-color: rebeccapurple;
+}
+
+#tealColor:hover  {
+    background-color: Teal;
+}
+
+#color-1:hover  {
+    background-color: rgb(81, 87, 209);
+}
+#color-2:hover  {
+    background-color: #71BDE2;
+}
+
+#color-3:hover  {
+    background-color: #F26233;
+}
+
+#color-4:hover  {
+    background-color: #09a;
+}
+
+.highlight {
+    color: #68C0BD;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto 80px auto;
+}
+
+article h2 {
+    font-size: 35px;
+    color: #68C0BD;
+
+}
+
+#rgb_img {
+    width: 300px;
+}
+
+/* .paletteRedGreenBlue div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+#redColorInPaletteRGB {
+    background-color: #ff0000;
+}
+
+#greenColorInPaletteRGB {
+    background-color: rgb(0, 255, 0);
+}
+
+#blueColorInPaletteRGB {
+    background-color: rgb(0, 0, 255);
+} */
+
+#hsl_img {
+    width: 400px;
+}
+
+article a {
+    color: white;
+}
+
+#colorPalette  {
+    color: #292929;
+    border-color: transparent;
+}
+
+#colorPalette td {
+    margin: 4px;
+}
+
+#colorPalette .light-text {
+    color:#ffffff;
+}
+
+thead a {
+    color: white;
+    text-decoration: none;
+}
+
+.subtitle {
+    color: #F1D379;
+}
+
+code {
+    background-color: rgba(255, 255, 255, 0.186);
+    padding: 0.025em 0.35em;
+    border-radius: 0.2em;
+}
+
+table code {
+    background-color: transparent;
+    padding: 0;
+}
+
+#topOfPage {
+    position: fixed;
+    left: 2%;
+    bottom: 20%;
+}
+
+#topOfPage a {
+    color: #F1D379;
+    text-decoration: none;
+}
+
+.coloredСircles {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    text-align: center;
+    color: #292929;
+    vertical-align: middle; 
+    display: table-cell;
+}
+
+#firstСoloredСircle {
+    background-color: #16E7EC;
+}
+
+#secondСoloredСircle {
+    background-color: #5EACBE;
+}
+
+#thirdСoloredСircle {
+    background-color: #04646C;
+    color: #d4c8c8;
+}
+
+#fourthСoloredСircle {
+    background-color: #6C64AC;
+}
+
+#fifthСoloredСircle {
+    background-color: #B090C4;
+}
+
+#sixthСoloredСircle {
+    background-color: #54315C;
+    color: #d4c8c8;
+}
+
+#coloredSquares {
+    height: 50px;
+    text-align: center;
+    border: white 4px solid;
+}
+.coloredSquares p {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    color: #0000009d;
+}
+
+#firstColoredSquare {
+    background-color: hwb(0 31% 7%);
+}
+
+#secondColoredSquare {
+    background-color: hwb(24 30% 0%);
+}
+
+#thirdColoredSquare {
+    background-color: hwb(50 31% 4%);
+}
+
+#fourthColoredSquare {
+    background-color: hwb(92 42% 17%);
+}
+
+#fifthColoredSquare {
+    background-color: hwb(171 38% 15%);
+}
+
+#sixthColoredSquare {
+    background-color: hwb(215 31% 21%);
+}
+
+#seventhColoredSquare {
+    background-color: hwb(283 32% 29%);
+}
