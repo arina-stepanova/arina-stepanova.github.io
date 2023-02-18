@@ -1,0 +1,130 @@
+* {
+    background-color: rgb(255, 160, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1, h2 {
+    color: bisque;
+    margin: 0 0 15px 0;
+}
+
+h1 {
+    font-size: 33px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    color: rgb(135, 8, 78);    
+    background-color: rgba(250, 241, 215, 0.343);
+    padding: 15px 10px 15px 10px;
+}
+
+b, i {
+    background-color: transparent;
+}
+
+figure {
+    width: 50%;    
+}
+
+figcaption {
+    padding: 10px;
+    color: rgb(104, 39, 77);
+    /* text-align: center; */
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prop {
+    display: flex;
+    flex-direction: row;
+}
+
+.opossumsImage {
+    width: 150px;
+    margin: 30px;
+    transition: all .8s ease 0s;
+}
+
+#opossum_1:hover {
+    transform: scale(1.4);
+}
+
+#opossum_1_1:hover {
+    transform: scale(2.2, 1);
+}
+
+#opossum_2:hover {
+    transform: translate(50px, 40px);
+}
+
+#opossum_2_2:hover {
+    transform: translate(-50px, 0);
+}
+
+#opossum_3:hover {
+    transform: rotate(-50deg);
+}
+
+#opossum_3_3:hover {
+    transform: rotate(300deg);
+}
+
+#opossum_4:hover {
+    transform: skew(20deg, 20deg);
+}
+
+#opossum_4_4:hover {
+    transform: skewX(-50deg);
+}
+
+#opossum_5:hover {
+    transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+
+#opossum_5_5:hover {
+    transform: matrix();
+}
+
+#opossum_6:hover {
+    transform: translate(30px, 30px) rotate(45deg) scale(0.5);
+}
+
+
+.button{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    min-height: 60px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 0;
+    color: #fff;
+    background-color: #5e5373;
+    box-shadow: 0 5px 0px #3c354a;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+    }
+
+.button:hover{
+    padding: 0px 70px;
+    background-color: #de2773;
+}

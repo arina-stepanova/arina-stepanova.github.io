@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Property CSS</title>
+        <link rel="stylesheet" type="text/css" href="opossum.css">
+        <link type="icon" href="images/favipossum.ico" rel="icon">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Property CSS "Transfrom".<br>2D и 3D трансформации </h1>
+            <h2>Дополнительно было применено CSS-свойство transition: all .8s ease 0s; для плавной смены эффектов transform.</h2>
+            <p>TRANSLATE(x, y): Сдвигает элемент на новое место, перемещая относительно <b>изначального</b> положения объекта вправо и вниз, используя координаты X и Y (можно вверх и вправо, используя отрицательные значения).</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_2.png" class="opossumsImage" id="opossum_2">
+                    <figcaption>transform: translate(50px, 40px);</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/opossum_2.png" class="opossumsImage" id="opossum_2_2">
+                    <figcaption>transform: translate(-50px, 0);</figcaption>                    
+                </figure>
+            </div>
+            <p>SCALE(x, y): Масштабирует элементы, делая их больше или меньше.</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_1.png" class="opossumsImage" id="opossum_1">
+                    <figcaption>transform: scale(1.4);</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/opossum_1.png" class="opossumsImage" id="opossum_1_1">
+                    <figcaption>transform: scale(2.2, 1);</figcaption>
+                </figure>
+            </div>
+            <p>ROTATE: Поворачивает элементы.</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_3.webp" class="opossumsImage" id="opossum_3">
+                    <figcaption>transform: rotate(-50deg);</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/opossum_3.webp" class="opossumsImage" id="opossum_3_3">
+                    <figcaption>transform: rotate(300deg);</figcaption>
+                </figure>
+            </div>
+            <p>SKEW: Деформирует (наклоняет) элементы.</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_4.webp" class="opossumsImage" id="opossum_4">
+                    <figcaption>transform: skew(20deg, 20deg)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/opossum_4.webp" class="opossumsImage" id="opossum_4_4">
+                    <figcaption>transform: skewX(-50deg);</figcaption>
+                </figure>
+            </div>
+            <p>MATRIX(a, b, c, d, tx, ty): Позволяет объединить несколько функций 2D-трансформаций в одной.</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_7.png" class="opossumsImage" id="opossum_5">
+                    <figcaption>transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);</figcaption>
+                </figure>
+            </div>
+            <p>Множественная 2D – трансформация</p>
+            <div class="prop">
+                <figure>
+                    <img src="images/opossum_6.png" class="opossumsImage" id="opossum_6">
+                    <figcaption>transform: translate(30px, 30px) rotate(45deg) scale(0.5);</figcaption>
+                </figure>
+            </div>
+            <!-- <br>
+            <h1>Property CSS "Transition". </h1>
+            <button class="button">Кнопка</button> -->
+        </div>
+    </body>
+</html>
