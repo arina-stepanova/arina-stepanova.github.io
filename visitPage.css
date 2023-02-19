@@ -6,7 +6,6 @@
     src: url(https://fonts.gstatic.com/s/mynerve/v1/P5sCzZKPdNjb4jt79CNkiL2t2dk.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
     font-family: 'Nunito';
     font-style: normal, italic;
@@ -17,60 +16,162 @@
   }
 
 body {
-    background-color: rgb(131, 188, 216);
-    /* background-image: url("/visitCardImages/background.svg"); */
-    /* background-image: url("https://www.transparenttextures.com/patterns/church.png"); */
-    background-image: url("https://www.transparenttextures.com/patterns/dust.png");
+    background-color: #86856E;
+    /* background-color: #1f6398; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
     margin: 0;
     padding: 0;
     font-size: medium;
     font-family: 'Nunito';
 }
 
-#name,
-#hello {
-    font-family: 'Mynerve', cursive;
-}
-
 #wrapper {
     width: 65%;
     height: 100%;
     margin: 3% auto;
-    background-color: white;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.261);
+    background-color: #ffffff;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.261); */
     padding: 3%;
+    border-radius: 40% 0 40% 0;
 }
 
 #firsLine {
-    display: inline-block;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    align-items: center;
 }
 
-#mainPhoto {
+#blockPhoto {
+    flex-grow: 1;
+    /* box-shadow: 10px 10px red; */
+    /* -webkit-filter: drop-shadow(30px 30px #1f6398);
+    filter: drop-shadow(30px 30px #1f6398); */
+}
+
+#photo {
     width: 290px;
     border-radius: 50%;
+    /* border: #1f649832 20px solid; */
+    /* border: #80C7DD; */
 }
 
-.certificates {
+#blockBio {
+    flex-grow: 3;
+    padding: 0 5%;
+    /* background-color: #1f649832; */
+    /* background-color: #80C7DD; */
+    height: 310px;
+}
+
+#hello {
+    font-family: 'Mynerve', cursive;
+    font-size: 45px;
+    /* color: #6AA5D5; */
+    color: #626150;
+}
+
+h1 {
+
+}
+
+h2 {
+    /* border: 2px solid black; */
+    /* padding: 20px; */
+    /* background-color: #1f649832; */
+    /* background-color: #A58E74; */
+    color: #6AA5D5;
+}
+
+p {
+    font-size: 17px;
+    color: #64452C;
+}
+
+.section {
+    margin: 0 20px;
+}
+
+#about_section {
+
+}
+
+#portfolio_section {
+
+}
+
+#portfolio_section ul{
+    padding-left: 0;
+}
+
+#portfolio_section ul a {
+    text-decoration: none;
+    color: rgb(72, 133, 190);
+}
+
+#portfolio_section ul a:hover {
+    color: rgb(22, 99, 162);
+    font-weight: bold;
+}
+
+#portfolio_section li{
+    list-style-type: none;
+}
+
+#certificates_section {
+
+}
+
+#certificates_section h2 {
+
+}
+
+#certificates_section img {
     height: 230px;
     margin-right: 30px;
     border: 3px solid black;
 }
-/* 
-#myProject {
 
-} */
+#education_section {
 
-ul a {
+}
+
+#education_section a { 
     text-decoration: none;
-    color: rgb(104, 173, 238);
+}
+
+#networks_section {
 
 }
 
-ul a:hover {
-    color: rgb(37, 147, 237);
+#networks_section img {
+    width: 50px;
+    margin-right: 15px;
 }
 
-/* .socialMedia {
-    width: 100px;
-} */
+#contacts_section {
+    
+}
+
+/* 
+Color palette 1: 
+
+#424530 - fern
+#E09132 - apricot
+#A58E74 - natural
+#FFEFCD - warm ivory
+ */
+
+ /* 
+ Color palette 2: 
+#B0C7DD
+#7C7D80
+#F2E3D0
+#000000
+ */
+
+
+ /* link — состояние ссылки до ее активации.
+visited — состояние, в которое переходит ссылка после ее активации.
+hover — состояние, когда указатель мыши наведен на ссылку.
+active — состояние, возникающее при щелчке на ссылке для ее активизации. */
