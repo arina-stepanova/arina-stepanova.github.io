@@ -68,7 +68,7 @@ body {
     font-family: 'Mynerve', cursive;
     font-size: 45px;
     /* color: #6AA5D5; */
-    color: #626150;
+    color: #6c3e3d;
 }
 
 h1 {
@@ -122,8 +122,13 @@ p {
 
 }
 
-#certificates_section h2 {
-
+#certificates_section a {
+    text-decoration: none;
+    color: #6AA5D5;
+}
+    
+#certificates_section a:hover {
+    color: #4c7ca3;
 }
 
 #certificates_section img {
@@ -136,8 +141,13 @@ p {
 
 }
 
-#education_section a { 
+#diploma { 
     text-decoration: none;
+    color: #6AA5D5;
+}
+
+#diploma:hover {
+    color: #4c7ca3;
 }
 
 #networks_section {
@@ -149,29 +159,13 @@ p {
     margin-right: 15px;
 }
 
-#contacts_section {
-    
+#contacts_section span {
+    color: #6c3e3d;
 }
 
 /* 
-Color palette 1: 
-
-#424530 - fern
-#E09132 - apricot
-#A58E74 - natural
-#FFEFCD - warm ivory
- */
-
- /* 
- Color palette 2: 
-#B0C7DD
-#7C7D80
-#F2E3D0
-#000000
- */
-
-
- /* link — состояние ссылки до ее активации.
+link — состояние ссылки до ее активации.
 visited — состояние, в которое переходит ссылка после ее активации.
 hover — состояние, когда указатель мыши наведен на ссылку.
-active — состояние, возникающее при щелчке на ссылке для ее активизации. */
+active — состояние, возникающее при щелчке на ссылке для ее активизации.
+*/
