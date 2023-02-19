@@ -26,7 +26,7 @@ body {
 }
 
 #wrapper {
-    width: 65%;
+    width: 70%;
     height: 100%;
     margin: 3% auto;
     background-color: #ffffff;
@@ -71,15 +71,8 @@ body {
     color: #6c3e3d;
 }
 
-h1 {
-
-}
-
 h2 {
-    /* border: 2px solid black; */
-    /* padding: 20px; */
-    /* background-color: #1f649832; */
-    /* background-color: #A58E74; */
+    font-size: 21px;
     color: #6AA5D5;
 }
 
